@@ -5,8 +5,8 @@
    Tutorial 10
    Case Problem 3
 
-   Author:  
-   Date:   
+   Author: Jazzmyne Nixon
+   Date: 2/2/4/2020   
    
    Filename: ah_report.js
    
