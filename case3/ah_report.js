@@ -28,14 +28,23 @@
       
 */
 
+//set total donation amount
+var donationTotal = 0;
+donors.forEach(calcSum);
 
+//set initial summary table
+var summaryTable = "<table><tr><th>Donors</th><td> " + donors.length + " </td></tr><tr><th>Total Donations</th><td> $" + donationTotal.toLocaleString() + "</td></tr></table>";
+document.getElementById("donationSummary").innerHTML = summaryTable;
 
+//sort major donors
+var majorDonors = donors.filter(findMajorDonors);
+majorDonors = majorDonors.sort(donorSortDescending);
 
+//writes donor tables for each major donor
+var donorTable = "<table><caption>Major Donors</caption><tr><th>Donation</th><th>Donor ID</th><th>Date</th><th>Name</th><th>Address</th><th>Phone</th><th>E-mail</th></tr>";
+majorDonors.forEach(writeDonorRow);
 
-
-
-
-
+document.getElementById("donorTable").innerHTML = donorTable;
 
 function calcSum(donorAmt) {
    donationTotal += donorAmt[9];
@@ -60,4 +69,3 @@ function writeDonorRow(value) {
    donorTable += "<td>" + value[8] + "</td>";         
    donorTable += "</tr>";
 }
-

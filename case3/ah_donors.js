@@ -1,5 +1,4 @@
 "use strict";
-
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 10
@@ -11,7 +10,7 @@
    Variables:
    the donors multi-dimension array contains the following data with following column indices
       donors[0] - donorID
-      donors[1] - frist name
+      donors[1] - first name
       donors[2] - last name
       donors[3] - address
       donors[4] - city
@@ -22,8 +21,6 @@
       donors[9] - donation amount
       donors[10] - donation date   
 */
-
-
 var donors = 
 [
    ["donor87", "Mildred", "Moore", "9451 Pearse Grove Drive", "Maysville", "KY", "41056", "606-555-2928", "mmoore@example.com/mail", 200, "3/13/2018"],
